@@ -1,3 +1,4 @@
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -6,3 +7,20 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+let ulList = document.getElementById('ingredients')
+  
+    const ingredientsEl = ingredients.forEach(el => {
+      let liItem = document.createElement('li');
+      liItem.classList.add("item");
+      liItem.textContent = el;
+      ulList.append(liItem)
+      
+      return ulList;
+  });
+
+console.log(ulList);
+
+ 
+// let item = ingredients.reduce((acc, liItem) => acc += liItem, '').join(' ');
+
