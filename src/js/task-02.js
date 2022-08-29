@@ -22,5 +22,5 @@ let ulList = document.getElementById('ingredients')
 console.log(ulList);
 
  
-// let item = ingredients.reduce((acc, liItem) => acc += liItem, '').join(' ');
+
 
