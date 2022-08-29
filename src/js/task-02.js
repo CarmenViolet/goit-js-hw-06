@@ -14,7 +14,7 @@ let ulList = document.getElementById('ingredients')
       let liItem = document.createElement('li');
       liItem.classList.add("item");
       liItem.textContent = el;
-      ulList.append(liItem)
+      ulList.insertAdjacentElement('afterbegin', liItem)
       
       return ulList;
   });

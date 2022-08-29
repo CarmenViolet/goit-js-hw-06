@@ -13,12 +13,12 @@ const images = [
   },
 ];
 
-let galleryEl = document.querySelector(".gallery");
+const galleryEl = document.querySelector(".gallery");
 
-let imagesEl = images
+const imagesEl = images
 .map((image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`)
-.join(' ');
+.reduce((acc, image) => acc += image)
 
-galleryEl.innerHTML = imagesEl;
-
+galleryEl.insertAdjacentHTML('afterbegin', imagesEl)
 console.log(galleryEl);
+

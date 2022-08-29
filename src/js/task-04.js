@@ -10,7 +10,7 @@ decrement.addEventListener('click', dec);
 
 function dec() {
    counterValue -= 1;
-   value.innerHTML = counterValue;
+   value.textContent = counterValue;
   console.log(counterValue);
 }
 
@@ -18,6 +18,6 @@ increment.addEventListener('click', inc);
 
 function inc() {
    counterValue += 1;
-    value.innerHTML = counterValue;
+    value.textContent = counterValue;
   console.log(counterValue);
 }

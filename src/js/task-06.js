@@ -7,7 +7,7 @@ function inputChecking(event) {
         if(inputEl.classList.contains('invalid')) {
             inputEl.classList.remove('invalid')
         }
-        return inputEl.classList.toggle('valid')
+        return inputEl.classList.add('valid')
         
     } else if(inputEl.value.length < 6) {
         if(inputEl.classList.contains('valid')) {

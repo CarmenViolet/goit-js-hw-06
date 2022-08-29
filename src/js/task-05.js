@@ -5,4 +5,8 @@ nameInput.addEventListener('input', textInput);
 
 function textInput(event) {
     nameOutput.textContent = event.currentTarget.value;
+
+    if(event.currentTarget.value === '') {
+        nameOutput.textContent = "Anonymous";
+    }
 }
